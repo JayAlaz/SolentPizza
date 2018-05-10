@@ -1,0 +1,152 @@
+8{box-sizing:border-box;}
+
+html, body{
+    min-width: 320px;
+    max-width: 1400px;
+    max-height: 100%;
+    margin: 0 auto;
+    background-image:url(bg.jpg);
+    font-family: "Book Antiqua", "Palatino Linotype", "Palatino LT STD", serif;
+}
+
+.row{
+    background-color: black;
+    padding: 5px;
+    width: 100%;
+    min-height: 1px;
+    float: left;
+}
+
+.row1{
+    padding: 0px;
+    width: 100%;
+    min-height: 1px;
+    float: left;
+    text-align: center;
+}
+
+.col
+{
+    float: left; 
+    min-height: 40px;
+    border-radius: 8px;
+    margin-left: 2.4%;
+    margin-right: 2.4%;
+    display:inline-block;
+    color: whitesmoke;
+}
+/* this code is a grid layout which I learnt from a youtube video. its my first time using anything like this but I found it made laying out my website a lot less tedious */
+/*the reason Ive created the first and last child col's here is to keep the collumns from sticking out on the sides*/
+.col:first-child{margin-left: 0px;}
+
+.col:last-child{margin-right: 0px;}
+
+.col.one{width: 3.93%;}
+.col.two{width: 12.66%;}
+.col.three{width: 21.4%;}
+.col.four{width: 30.13%;}
+.col.five{width: 38.867%;}
+.col.six{width: 47.6%;}
+.col.seven{width: 56.333%;}
+.col.eight{width: 65.07%;}
+.col.nine{width: 73.8%;}
+.col.ten{width: 82.533%;}
+.col.eleven{width: 91.27%;}
+.col.twelve{width: 100%;}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.img 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 300px;
+  height: 300px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+/*I used h2 instead of h1 because the h2 sizing was more to scale with the rest of the website*/
+h2 {
+    
+    font-size: 3vw;
+    color: white;
+    font-family: "Book Antiqua", "Palatino Linotype", "Palatino LT STD", serif;
+    text-align: center;
+    max-width: 100%;
+    line-height: 10px;
+}
+
+p 
+{
+    font-size: 22px;
+    color: whitesmoke;
+    text-align: left;
+    font-family: "Book Antiqua", "Palatino Linotype", "Palatino LT STD", serif;
+}
+
+a
+{
+ color: whitesmoke;
+}
+
+.nav 
+{
+    margin: 0px;
+    text-align: center;
+    font-size: 24px;
+}
+/*this is the styling for the nav bar, there are a lot of styling elements put into this such as what occurs when you hover over a hyperlink in the nav bar etc*/
+.nav a {
+    clear: left;
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0 25px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.nav a:hover {
+    background-color: orangered;
+    color: whitesmoke;
+}
+
+.nav a:active {
+    background-color: whitesmoke;
+    color: red;
+}
+
+span 
+{
+    font-size: 24px;
+    color: whitesmoke;
+}

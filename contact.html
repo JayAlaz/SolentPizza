@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Solent Pizza</title> <!-- page title -->
+        <link rel="stylesheet" type="text/css" href="contact.css"> <!-- linking style sheets -->
+        
+        <!-- script for present time clock -->
+<span id="datetime">
+
+<script> 
+    
+  var dt = new Date();
+ document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+    
+</script>
+</span>    <!-- close script -->
+           
+             <!-- javascript validation -->
+    <script> 
+        
+        function validateForm() {
+            var x = document.forms["Form"]["fname"].value;
+            if (x == "") {
+                alert("First name must be filled out");
+                return false;
+            }
+        }   
+                  
+        function validateForm() {
+            var x = document.forms["Form"]["lname"].value;
+            if (x == "") {
+                alert("Last name must be filled out");
+                return false;
+            }
+        } 
+                  
+        function validateForm() {
+            var x = document.forms["Form"]["email"].value;
+            if (x == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+        } 
+                  
+        function validateForm() {
+            var x = document.forms["Form"]["Message"].value;
+            if (x == "") {
+                alert("Message must be filled out");
+                return false;
+            }
+        } 
+                  
+    </script> <!-- end of javascript -->
+ </head>
+ <body> 
+ 
+    <div class="row">
+        <div class="col twelve">
+          <h2>Welcome To Solent Pizza's!</h2>
+               <div class="nav">
+                    <a class="active" href="index.html"><span>HOME</span></a>
+                    <a href="order.html">ORDER</a>
+                    <a href="contact.html">CONTACT US</a>
+                </div>
+        </div>
+  </div>
+                    <div class="row">
+                    <div class="col five">
+<div class="container"> <!-- container div --> 
+    <div class="form">   <!-- start of form  --> 
+        
+        <form name="Form" action="/form.php" onsubmit="return validateForm()" method="post">
+            <label for="fname">First Name<br></label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..."  >
+
+            <label for="lname"><br>Last Name<br></label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+            <label for="Email"><br>Email<br></label>
+            <input type="text" placeholder="Enter Email" name="email" >
+      
+            <label for="Number"><br>Number<br></label>
+            <input type="text" placeholder="Enter Number" name="number" >  
+
+            <label for="subject"><br>Message<br></label>
+            <textarea id="subject" name="Message" placeholder="Write something.." ></textarea>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </form> <!-- end of form itself --> 
+    </div> <!-- end of form class --> 
+                        </div><!--end of col-->
+                        
+           
+                        <div class="col five">
+    <div id="googlemap"> <!-- embedded google map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1065.0036733879779!2d-1.4074610788901747!3d50.91404433811846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xecb67967aa091323!2sSolent+Pizza&#39;s!5e0!3m2!1sen!2suk!4v1494773841146" width="950" height="525" frameborder="2px" style="border:0" align="center" allowfullscreen></iframe>
+    </div>
+</div> <!-- end of container -->
+                        </div>
+                        </div>
+        <!-- footer -->     
+      <div class="row1">
+        <div class="col twelve">
+            <p>&copy; Solent Pizza 2018<br>Made by J.Alaz</p>
+        </div>
+    </div>
+            
+    </body>
+</html>

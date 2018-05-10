@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Solent Pizza</title>
+        <link rel="stylesheet" type="text/css" href="order.css">
+<!-- script for real time clock -->
+<span id="datetime">
+
+<script> 
+    
+  var dt = new Date();
+ document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+    
+</script>
+</span>    <!-- close script -->
+</head>
+ 
+     <div class="row">
+        <div class="col twelve">
+          <h2>Welcome To Solent Pizza's!</h2>
+               <div class="nav">
+                    <a class="active" href="index.html"><span>HOME</span></a>
+                    <a href="order.html">ORDER</a>
+                    <a href="contact.html">CONTACT US</a>
+                </div>
+        </div>
+     </div>
+ 
+<div class="row">
+<div class="col six">
+<div id="form"> <!-- start of form class --> 
+    
+        <form name="Form" action="/form.php"
+onsubmit="return validateForm()" method="post">
+
+      <div1>
+       <label for="pbase"><B>Select your pizza base:</B></label><br>
+  <label><input type="radio" name="base" value="Small">Small <span class="price">£5</span><br></label>
+  <label><input type="radio" name="base" value="Medium">Medium <span class="price">£7.50</span><br></label>
+  <label><input type="radio" name="base" value="X-Large">X-Large <span class="price">£12.50</span><br></label>
+    </div1>
+    
+      <div2>
+       <label for="s-topping"><B>Select one or more toppings:</B></label><br>
+  <label><input type="checkbox" name="toppings" value="cheese">Cheese <span class="price">£0.50</span><br></label>
+  <label><input type="checkbox" name="toppings" value="Mushrooms">Mushrooms <span class="price">£0.40</span><br></label>
+  <label><input type="checkbox" name="toppings" value="Ham">Ham <span class="price">£0.50</span><br> </label>
+  <label><input type="checkbox" name="toppings" value="Anchovies">Anchovies <span class="price">£0.60</span><br></label>
+      </div2>
+      
+      <div3>
+       <label for="extras"><B>Extras:</B></label><br>
+  <label><input type="checkbox" name="toppings" value="chips">Chips <span class="price">£1.50<br></span></label>
+  <label><input type="checkbox" name="toppings" value="garlicbread">Garlic Bread<span class="price"> £2.00<br></span></label>
+      </div3>
+      
+      <div4>
+       <label for="d-info"><B>Delivery Information:</B></label><br>
+      
+  <label for="a-line1">Address Line 1:</label>
+  <label><input type="text" id="a-line1" name="Address Line 1" placeholder="Enter your address..." required> </label> 
+
+  <label for="postcode"><br>Post Code:</label>
+  <label><input type="text" id="postcode" name="Post Code " placeholder="Enter your postcode..."required></label>
+      </div4>
+      
+            <div>
+  <input type="submit" value="Place Order">
+  <input type="reset" value="Clear">
+        
+        </div> 
+      </form><!-- end of form itself --> 
+      </div><!-- end of form class -->
+      </div><!-- col end -->
+ 
+      <div class="col six">
+      <img src="orderpizzaa.jpg" alt="Pepperoni Pizza" class="image">
+      </div><!--col end-->
+      </div><!--row end-->
+    <!-- footer --> 
+     <div class="row1">
+        <div class="col twelve">
+            <p>&copy;Solent Pizza 2018<br>Made by J.Alaz</p>
+        </div>
+    </div>

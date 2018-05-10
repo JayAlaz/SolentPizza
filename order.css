@@ -1,0 +1,129 @@
+8{box-sizing:border-box;}
+
+html, body{  /* styles the body and adds the background image */
+    min-width: 320px;
+    max-width: 1400px;
+    max-height: 100%;
+    margin: 0 auto;
+    font-size: 24px;
+    background-image:url(bg.jpg);
+    font-family: "Book Antiqua", "Palatino Linotype", "Palatino LT STD", serif;
+}
+
+.image
+{
+    display: block;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+.row{
+    background-color: black;
+    padding: 5px;
+    width: 100%;
+    min-height: 1px;
+    float: left;
+}
+
+.row1{
+    padding: 0px;
+    width: 100%;
+    min-height: 1px;
+    float: left;
+    text-align: center;
+}
+
+.col
+{
+    float: left; 
+    min-height: 40px;
+    border-radius: 8px;
+    margin-left: 2.4%;
+    margin-right: 2.4%;
+    display:inline-block;
+    color: whitesmoke;
+}
+
+
+.col:first-child{margin-left: 0px;}
+
+.col:last-child{margin-right: 0px;}
+
+.col.one{width: 3.93%;}
+.col.two{width: 12.66%;}
+.col.three{width: 21.4%;}
+.col.four{width: 30.13%;}
+.col.five{width: 38.867%;}
+.col.six{width: 47.6%;}
+.col.seven{width: 56.333%;}
+.col.eight{width: 65.07%;}
+.col.nine{width: 73.8%;}
+.col.ten{width: 82.533%;}
+.col.eleven{width: 91.27%;}
+.col.twelve{width: 100%;}
+
+.form { /* styles the form */
+    width: 50%;
+    border-radius: 4px;
+    color: orangered;
+    padding: 20px;
+    float: left;
+}
+
+.price
+{
+color: orangered;
+}
+
+input[type=submit] { /* styles the submit button */
+    background-color: orangered;
+    color: whitesmoke;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+input[type=reset] { /* styles the clear button */
+    background-color: orangered;
+    color: whitesmoke;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*this is the styling for the nav bar, there are a lot of styling elements put into this such as what occurs when you hover over a hyperlink in the nav bar etc*/
+.nav 
+{
+    margin: 0px;
+    text-align: center;
+    font-size: 24px;
+}
+.nav a {
+    clear: left;
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0 25px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.nav a:hover {
+    background-color: orangered;
+    color: whitesmoke;
+}
+
+.nav a:active {
+    background-color: whitesmoke;
+    color: red;
+}
+/*styles the prices and the clock*/
+span
+{
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+
